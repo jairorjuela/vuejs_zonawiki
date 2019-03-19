@@ -11,6 +11,12 @@ $ sudo docker-compose build
 $ sudo docker-compose up -d
 ```
 
+Visit:
+```
+http:// localhost:8080
+```
+
+
 ### Compiles and hot-reloads for development
 ```
 npm run serve
