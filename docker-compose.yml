@@ -1,0 +1,13 @@
+version: "3"
+services:
+  vueapp:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./:/usr/src/app
+      - /usr/src/app/node_modules
+    environment:
+      HOST: 0.0.0.0
+      PATH: "/usr/src/app/node_modules/.bin:$PATH"
+    command: "npm run serve"
